@@ -56,7 +56,7 @@ def convert_midi_files_in_directory(directory):
                 print(f"Не удалось обработать файл {file}: {e}")
     return notes
 
-directory = '/content/Laba_3-1_Akimov/midi'
+directory = '/content/midi'
 try:
     all_notes = convert_midi_files_in_directory(directory)
     note_to_int = {note: number for number, note in enumerate(sorted(set(all_notes)))}
